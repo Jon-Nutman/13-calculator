@@ -1,7 +1,7 @@
 
 
 
-let output = document.querySelector('#sub').addEventListener('submit', function (e) {
+document.querySelector('#sub').addEventListener('submit', function (e) {
     e.preventDefault()
     // console.log(e.submitter.id)
     let answer = ''
@@ -10,7 +10,7 @@ let output = document.querySelector('#sub').addEventListener('submit', function 
     let operator = e.submitter.id
 
     // console.log(operator)
-
+    
     if (operator == "add"){
         answer = Number(num1) + Number(num2)
     }else if(operator == "subtract"){
@@ -20,13 +20,10 @@ let output = document.querySelector('#sub').addEventListener('submit', function 
     }else if(operator == "divide"){
         answer = (Number(num1)) / (Number(num2))
     }
-    return answer
-    // console.log(answer)
+    return(document.getElementById("answer").value = answer)
 })
 
-console.log(output)
-
-document.getElementById("answer").innerHTML = output
+// console.log(output)
 
 
 
