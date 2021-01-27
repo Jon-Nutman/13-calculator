@@ -4,7 +4,34 @@
     box-sizing: inherit;
   }
 
- #sub{
+
+.calc {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+}
+
+#top-row{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.screen{
+    column-count: 3;
+}
+
+.keys {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+
+/* 
+  EXPLORE MODE */
+ /* #sub{
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -13,4 +40,4 @@
   }
 button{
     display: flex;
-}
+} */
